@@ -17,11 +17,11 @@ fn main() -> std::io::Result<()> {
     let now = Instant::now();
     downloader::download_file(
         String::from("test.zip"),
-        String::from("http://ipv4.download.thinkbroadband.com:81/20MB.zip"),
+        String::from("http://speedcheck.cdn.on.net/10meg.test"),
     );
     let elapsed = now.elapsed();
     println!("Elapsed: {:.2?}", elapsed);
-    
+
     let serialized = serde_json::to_string(&point).unwrap();
     println!("serialized = {}", serialized);
     let mut file = File::create("foo.txt")?;
