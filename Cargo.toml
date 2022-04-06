@@ -7,4 +7,3 @@ edition = "2021"
 serde = { version = "*", features = ["derive"] }
 serde_json = "*"
 reqwest = { version = "*", features = ["blocking", "json"] }
-azul = { git = "https://github.com/maps4print/azul" }
